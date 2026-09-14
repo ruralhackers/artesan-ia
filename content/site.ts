@@ -232,15 +232,7 @@ export const apply = {
       "Transporte cubierto (200 €)",
       "Talleres, visitas, sesiones de IA y emprendimiento",
     ],
-    note: "Abierta a toda España. Fechas TBC 2026. Destinos: Anceu (Galicia) y Caravaca (Murcia), con Espacio Geranios. Bases: https://docs.google.com/document/d/1YlAVl36BoolonvTkuT1WgLN-BOPQg_MZORKcmkO9K9o/edit",
   },
-  requirements: [
-    "Vivir en España: la convocatoria está abierta a cualquier comunidad autónoma.",
-    "Dedicarte a la artesanía o a una práctica de taller (cerámica, textil, madera, joyería, cuero, vidrio, híbridos…).",
-    "Ganas de compartir el oficio y de aprender IA, emprendimiento e internacionalización sin soltar las manos.",
-    "Disponibilidad de una semana (6 noches) en Anceu o en Caravaca.",
-    "Respeto por la gente de la aldea de Anceu y del pueblo de Caravaca: el proyecto de las tardes se hace con esa gente, no sobre ella.",
-  ],
   ctaLabel: "Escribir",
   cohorts: [
     {
@@ -267,7 +259,6 @@ export const partners = {
   items: [
     { name: "Rural Hackers", role: "Anceu, Galicia", href: "https://ruralhackers.com" },
     { name: "Espacio Geranios", role: "Caravaca, Murcia", href: "https://www.espaciogeranios.com" },
-    { name: "Anceu", role: "Acogida en Galicia", href: "https://anceu.com" },
   ],
 } as const;
 

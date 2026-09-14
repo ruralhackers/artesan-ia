@@ -19,21 +19,7 @@ export function Apply() {
               </li>
             ))}
           </ul>
-          <p className="mt-16 text-body-sm text-charcoal-press">
-            <AnceuText text={apply.included.note} />
-          </p>
         </div>
-
-        <ul className="mt-40 max-w-[34rem] space-y-16">
-          {apply.requirements.map((item) => (
-            <li
-              key={item}
-              className="border-l border-pure-ink pl-20 text-body-sm text-pure-ink"
-            >
-              <AnceuText text={item} />
-            </li>
-          ))}
-        </ul>
 
         <div className="mt-60 grid gap-40 md:grid-cols-2">
           {apply.cohorts.map((cohort) => (
