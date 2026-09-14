@@ -9,16 +9,7 @@ export function Footer() {
             <p className="text-section">{site.name}</p>
             <p className="mt-20 max-w-[28rem] text-body-sm">
               Rural Hackers y Espacio Geranios: 20 plazas abiertas a toda
-              España, para una semana en{" "}
-              <a
-                href={site.anceuUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline underline-offset-4 transition-opacity hover:opacity-60"
-              >
-                Anceu
-              </a>{" "}
-              (Galicia) o en Caravaca (Murcia).
+              España, para una semana en Galicia o en Murcia.
             </p>
           </div>
 
@@ -71,7 +62,7 @@ export function Footer() {
         <div className="mt-60 flex flex-col gap-12 border-t border-bone-gray pt-24 label-mono text-caption sm:flex-row sm:items-center sm:justify-between">
           <span>Versión 0.1</span>
           <span>
-            Anceu ● Galicia · Caravaca ● Murcia · Espacio Geranios
+            Rural Hackers · Espacio Geranios · Galicia · Murcia
           </span>
         </div>
       </div>
