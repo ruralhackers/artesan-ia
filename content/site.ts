@@ -232,7 +232,7 @@ export const apply = {
       "Transporte cubierto (200 €)",
       "Talleres, visitas, sesiones de IA y emprendimiento",
     ],
-    note: "Abierta a toda España. Fechas TBC 2026. Destinos: Anceu (Galicia) y Caravaca (Murcia), con Espacio Geranios.",
+    note: "Abierta a toda España. Fechas TBC 2026. Destinos: Anceu (Galicia) y Caravaca (Murcia), con Espacio Geranios. Bases: https://docs.google.com/document/d/1YlAVl36BoolonvTkuT1WgLN-BOPQg_MZORKcmkO9K9o/edit",
   },
   requirements: [
     "Vivir en España: la convocatoria está abierta a cualquier comunidad autónoma.",

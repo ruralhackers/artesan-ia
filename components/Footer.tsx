@@ -28,18 +28,14 @@ export function Footer() {
               <ul className="mt-20 space-y-16">
                 {partners.items.map((partner) => (
                   <li key={partner.name}>
-                    {"href" in partner && partner.href ? (
-                      <a
-                        href={partner.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="label-mono underline underline-offset-4 transition-opacity hover:opacity-60"
-                      >
-                        {partner.name}
-                      </a>
-                    ) : (
-                      <p className="label-mono">{partner.name}</p>
-                    )}
+                    <a
+                      href={partner.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="label-mono underline underline-offset-4 transition-opacity hover:opacity-60"
+                    >
+                      {partner.name}
+                    </a>
                     <p className="text-caption text-charcoal-press">{partner.role}</p>
                   </li>
                 ))}

@@ -11,8 +11,8 @@ type LinkRule = {
 
 const RULES: LinkRule[] = [
   { match: "Anceu Coliving", href: site.anceuUrl },
+  { match: "Espacio Geranios", href: site.geraniosUrl },
   { match: "Anceu", href: site.anceuUrl },
-  { match: "Pegadas do Recordo", href: site.pegadasUrl },
 ];
 
 function linkify(text: string, rules: LinkRule[]): ReactNode[] {
@@ -39,7 +39,7 @@ function linkify(text: string, rules: LinkRule[]): ReactNode[] {
   });
 }
 
-/** Links Anceu / Anceu Coliving → anceu.com and Pegadas do Recordo → Linktree */
+/** Links Anceu → anceu.com and Espacio Geranios → espaciogeranios.com */
 export function AnceuText({ text }: { text: string }) {
   return (
     <>
