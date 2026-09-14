@@ -20,11 +20,7 @@ export function Method() {
                   src={item.image.src}
                   alt={item.image.alt}
                   fill
-                  className={
-                    item.image.src.includes("mural")
-                      ? "object-cover object-[center_70%]"
-                      : "object-cover"
-                  }
+                  className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>

@@ -53,7 +53,7 @@ export function Apply() {
                   variant="ink"
                   className="w-fit"
                 >
-                  Formulario {cohort.label} →
+                  {apply.ctaLabel} · {cohort.label} →
                 </Button>
               </div>
             </article>

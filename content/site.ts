@@ -1,116 +1,137 @@
 export const site = {
-  name: "RURALI-ART",
+  name: "ARTESAN-IA",
   org: "Rural Hackers",
+  partnerSouth: "Espacio Geranios",
   email: "ana@ruralhackers.com",
-  url: "https://ruralhackers.com",
+  url: "https://artesania.ruralhackers.com",
   anceuUrl: "https://anceu.com",
-  pegadasUrl: "https://linktr.ee/pegadas.do.recordo",
-  hashtags: ["#RuralIART", "#IACreativa"],
-  ministryCredit: "Actividad subvencionada por el Ministerio de Cultura",
+  geraniosUrl: "https://www.espaciogeranios.com",
+  hashtags: ["#ARTESANIA", "#OficioeIA"],
   description:
-    "Lab intensivo en Anceu para artistas: aprende a usar la IA en tus procesos y recupera horas para crear. Dos cohortes, ética, comunidad y toolkit abierto.",
+    "Una semana y dos regiones de artesanía: 20 plazas abiertas a toda España, para ir a Anceu (Galicia) o a Caravaca (Murcia).",
 } as const;
 
 export const nav = [
-  { href: "#que-es", label: "Qué es" },
-  { href: "#lab", label: "Lab" },
-  { href: "#metodo", label: "Método" },
-  { href: "#muestra", label: "Muestra" },
-  { href: "#becas", label: "Becas" },
+  { href: "#que-es", label: "Para ti" },
+  { href: "#programa", label: "La semana" },
+  { href: "#metodo", label: "Dos regiones" },
+  { href: "#cierre", label: "Cierre" },
   { href: "#quien", label: "Quiénes" },
   { href: "#calendario", label: "Calendario" },
   { href: "#convocatoria", label: "Convocatoria" },
 ] as const;
 
 export const hero = {
-  brand: "RURALI-ART",
-  eyebrow: "Anceu · Galicia · Oct–Nov 2026",
-  headline: "La IA no tiene que hacer tu obra. Puede devolverte el tiempo para hacerla.",
+  brand: "ARTESAN-IA",
+  eyebrow: "Anceu, Galicia · Caravaca, Murcia · TBC 2026",
+  headline: "Tu oficio no necesita una máquina que lo sustituya. Necesita tiempo, territorio y otras manos.",
   support:
-    "Siete días en Anceu — con alojamiento y manutención incluidos — para meter la IA en tu flujo de trabajo: investigar, organizar, preparar, documentar. Menos horas en lo que te frena, más en lo que solo tú puedes crear.",
-  primaryCta: { href: "#convocatoria", label: "Quiero participar" },
-  secondaryCta: { href: "#que-es", label: "Cómo funciona" },
+    "Una semana para personas que se dedican a la artesanía. Por las mañanas: talleres de oficio local, visitas a espacios creativos, e IA, emprendimiento e internacionalización. Por las tardes: aprendizaje entre pares, con la gente de la aldea de Anceu y del pueblo de Caravaca, un proyecto pequeño que deje algo en el sitio.",
+  primaryCta: { href: "#convocatoria", label: "Quiero ir" },
+  secondaryCta: { href: "#programa", label: "Cómo es la semana" },
+  facts: [
+    "20 plazas · toda España",
+    "15 a Anceu",
+    "5 a Caravaca",
+    "Rural Hackers",
+    "Espacio Geranios",
+  ],
   images: {
     large: {
       src: "/images/hero-large.jpg",
-      alt: "Ordenador entre helechos en Anceu — tecnología en el rural",
-      width: 1500,
-      height: 2000,
+      alt: "Retrato textil colgado entre árboles, en el bosque de Anceu",
+      width: 1707,
+      height: 2560,
     },
     small: {
       src: "/images/hero-small.jpg",
-      alt: "Hórreo en Anceu — territorio donde nace RURALI-ART",
-      width: 2000,
-      height: 1350,
+      alt: "Rogelilo junto a su retrato, junto al río en Anceu",
+      width: 1536,
+      height: 1024,
     },
   },
 } as const;
 
 export const about = {
   id: "que-es",
-  title: "Para ti, si te falta tiempo de taller",
+  title: "Si te dedicas a la artesanía y quieres que tu oficio dialogue con otro territorio",
   lead:
-    "Sabes lo que es: la gestión, la investigación, los mails, los borradores y la producción se comen el día. Este lab es para artistas que quieren usar la IA ahí — en lo operativo — y proteger las horas de creación.",
-  body: "No venimos a pedirte que la máquina haga tu obra. Venimos a que salgas con procesos claros, herramientas concretas y criterio ético para tu estudio. Anceu da calma; la comunidad da contexto; tú te llevas el método.",
+    "Esto no es un curso de pantallas ni una feria. Es una residencia corta, abierta a personas de toda España que se dedican a la artesanía: 20 plazas para ir a Galicia o a Murcia, vivir en el sitio y probar IA y emprendimiento sin soltar el oficio.",
+  body: "Sales con contactos reales — la gente de la aldea de Anceu y del pueblo de Caravaca — y con un proyecto pequeño hecho ahí, no en abstracto.",
+  workshops: {
+    title: "Talleres con artistas locales",
+    text: "En cada región hay dos talleres de mañana con artistas locales: conoces el oficio de otra persona, de cerca.",
+  },
   pillars: [
     {
-      title: "Productividad creativa",
-      text: "IA para investigar más rápido, organizar materiales, preparar borradores y documentar. Tú decides el criterio; la herramienta acelera.",
+      title: "IA para el oficio",
+      text: "Para ganar tiempo en las tareas del oficio que no te gustan — papeles, fotos, mails, organización — y dejar las manos para lo que sí.",
     },
     {
-      title: "Procesos que se quedan",
-      text: "No es un taller de demos. Diseñas flujos que puedas repetir en tu práctica cuando vuelvas a casa.",
+      title: "Emprender sin disfraz",
+      text: "Precios, clientes, internacionalizar lo que ya haces. Sesiones concretas, con quien ya vive de un oficio.",
     },
     {
-      title: "Ética sin rollos vacíos",
-      text: "Autoría, licencias, consentimiento y sesgos aplicados a cómo trabajas tú — no a un manifiesto abstracto.",
+      title: "Espacios creativos de la región",
+      text: "Visitas a espacios del entorno en Anceu o en Caravaca. Ver cómo se trabaja aquí.",
     },
   ],
 } as const;
 
 export const lab = {
-  id: "lab",
-  title: "AI Creators Lab",
+  id: "programa",
+  title: "Una semana, dos regiones de artesanía",
   lead:
-    "Dos cohortes de 12 artistas en Anceu. Siete días con un ritmo claro: mañanas de formación en IA facilitada por el equipo de Rural Hackers y tardes de creación colectiva en la aldea.",
+    "20 personas de toda España, dos regiones: 15 plazas en Anceu (Galicia) y 5 en Caravaca (Murcia), con Espacio Geranios. Misma semana en cada sitio: mañanas de oficio, visitas e IA; tardes con la gente de Anceu o de Caravaca.",
   facts: [
-    { label: "Cohortes", value: "2" },
-    { label: "Artistas por cohorte", value: "12" },
-    { label: "Duración", value: "7 días" },
-    { label: "Cuándo", value: "Oct–Nov" },
+    { label: "A Anceu", value: "15" },
+    { label: "A Caravaca", value: "5" },
+    { label: "Noches", value: "6" },
+    { label: "Fechas", value: "TBC" },
   ],
   modules: [
     {
-      title: "Formación en IA",
-      tag: "Mañanas",
-      text: "Sesiones prácticas facilitadas por el equipo de Rural Hackers para aprender herramientas de IA (texto, imagen, audio, audiovisual) y meterlas en tu flujo de trabajo. Investigar, organizar, preparar y documentar más rápido — para recuperar tiempo de taller. Priorizamos herramientas accesibles y de código abierto.",
+      title: "Talleres de oficio local",
+      tag: "2 mañanas",
+      text: "Dos mañanas con artistas locales del territorio de acogida. Una mañana, un taller. Ves el gesto, el material, la manera de trabajar de quien vive aquí.",
       image: {
         src: "/images/lab-atelier.jpg",
-        alt: "Rogelio, vecino de Anceu — memoria viva del territorio",
-        width: 2000,
-        height: 1333,
+        alt: "Textiles naturales colgados en un palo, contra un muro de piedra",
+        width: 1996,
+        height: 1331,
       },
     },
     {
-      title: "Ética, licencias y uso responsable",
-      tag: "Transversal",
-      text: "Atraviesa toda la experiencia: propiedad intelectual, licencias Creative Commons, autoría, sesgos y uso responsable de datos. Cada herramienta se mira con criterio ético; juntos armáis un protocolo útil para vuestro estudio.",
-      image: {
-        src: "/images/lab-ruralia.jpg",
-        alt: "Gato junto a un portátil en Anceu — vida y tecnología compartidas",
-        width: 1500,
-        height: 2000,
-      },
-    },
-    {
-      title: "Creación colectiva",
-      tag: "Tardes",
-      text: "Por ejemplo puedes continuar Pegadas do Recordo, un proyecto en marcha sobre memoria viva — historias y experiencias de Anceu —.",
+      title: "Visitas a espacios creativos",
+      tag: "2 mañanas",
+      text: "Otras dos mañanas salís del alojamiento: espacios creativos del entorno, talleres vecinos, sitios donde se hace y se comparte. Para vincularte con la región, no solo con la casa.",
       image: {
         src: "/images/lab-cowork.jpg",
-        alt: "Caminata por Anceu con mochilas — inmersión en el territorio",
-        width: 2000,
-        height: 1125,
+        alt: "Gente en el territorio de Anceu, con el monte al fondo",
+        width: 1453,
+        height: 972,
+      },
+    },
+    {
+      title: "IA, emprender, internacionalizar",
+      tag: "Mañanas",
+      text: "Sesiones de mañana: IA aplicada al oficio, competencias de emprendimiento e internacionalización. Ritmo de taller, no de máster.",
+      image: {
+        src: "/images/lab-ruralia.jpg",
+        alt: "Un ordenador en medio de los helechos: IA y oficio en el rural",
+        width: 1920,
+        height: 2560,
+      },
+    },
+    {
+      title: "Tardes entre pares",
+      tag: "Todas las tardes",
+      text: "Aprendizaje entre pares y un proyecto pequeño de impacto, con el acompañamiento de la gente de la aldea de Anceu o del pueblo de Caravaca. Algo que deje huella en el sitio.",
+      image: {
+        src: "/images/mural.jpg",
+        alt: "Pandereteiras de Anceu: el oficio y la gente de la aldea",
+        width: 2048,
+        height: 1365,
       },
     },
   ],
@@ -118,58 +139,43 @@ export const lab = {
 
 export const method = {
   id: "metodo",
-  title: "Método: la IA al servicio de tu estudio",
+  title: "Galicia y Murcia",
   lead:
-    "Aprendes haciendo. Pruebas herramientas sobre tareas reales de tu práctica, mides qué te ahorra tiempo y te quedas solo con lo que sirve. El territorio y la comunidad acompañan; el criterio creativo es tuyo.",
+    "Dos comunidades autónomas, 20 plazas abiertas a toda España. Eliges destino: Anceu (Galicia) o Caravaca (Murcia), con Espacio Geranios. Mismo ritmo: mañanas de oficio, visitas e IA; tardes con quien vive allí.",
   items: [
     {
-      title: "Procesos, no demos",
-      text: "Cada sesión apunta a un cuello de botella concreto: investigación, organización, preparación de materiales, documentación. Sales con flujos que puedes repetir.",
+      title: "Anceu, Galicia",
+      text: "15 plazas. Acogida de Rural Hackers. Cierre con Fuchiqueira y Entre Culturas, con la gente de la aldea.",
       image: {
-        src: "/images/lote.png",
-        alt: "Trabajo de procesos creativos en Anceu",
-        width: 615,
-        height: 774,
+        src: "/images/anceu-destino.jpg",
+        alt: "Círculo a la puerta de la casa, con el cartel de Anceu",
+        width: 1332,
+        height: 999,
       },
     },
     {
-      title: "Comunidad como contexto",
-      text: "Trabajas con memoria y territorio de Anceu, con consentimiento y diálogo. No es extracción: es práctica situada que pone a prueba tus procesos con material vivo.",
+      title: "Caravaca, Murcia",
+      text: "5 plazas. Acogida de Espacio Geranios. Cierre abierto con el pueblo para mostrar lo trabajado.",
       image: {
-        src: "/images/mural.jpg",
-        alt: "Mural en Anceu — práctica creativa en el territorio",
-        width: 1505,
-        height: 2000,
+        src: "/images/oficio.jpg",
+        alt: "Tapiz de plantas y fibras: el oficio como materia viva",
+        width: 1296,
+        height: 864,
       },
     },
   ],
 } as const;
 
 export const showcase = {
-  id: "muestra",
-  title: "Muestra y conversación",
+  id: "cierre",
+  title: "Cierre con quien ha acogido",
   lead:
-    "Cierre público gratuito en la aldea: compartís lo que habéis trabajado — procesos, hallazgos y piezas — en proyecciones, instalaciones, performances y espacios no convencionales.",
+    "En Anceu, el cierre es Fuchiqueira y Entre Culturas. En Caravaca, un cierre abierto con el pueblo para mostrar los resultados de la semana — oficio, procesos y el proyecto hecho allí.",
   image: {
-    src: "/images/se.jpg",
-    alt: "Momento de la muestra y conversación en Anceu",
-    width: 2000,
-    height: 1333,
-  },
-} as const;
-
-export const scholarships = {
-  id: "becas",
-  title: "Becas de profundización",
-  lead:
-    "Becas de un mes para desarrollar tu proyecto en Anceu en marzo de 2027. Cinco artistas de ambas cohortes continúan en Anceu Coliving con beca completa: alojamiento, manutención, mentoría semanal y recursos técnicos.",
-  body: "Financiadas con mecenazgo privado (entre los partners, Eleven Yellow).",
-  fact: "5 plazas · 1 mes · Marzo 2027 · Anceu",
-  image: {
-    src: "/images/naranjas.jpg",
-    alt: "Naranjas en Anceu durante la residencia creativa",
-    width: 2000,
-    height: 1333,
+    src: "/images/cierre.jpg",
+    alt: "Cierre con la aldea: gente de Anceu y residentes delante del mural",
+    width: 1920,
+    height: 1280,
   },
 } as const;
 
@@ -177,16 +183,17 @@ export const who = {
   id: "quien",
   title: "Quiénes somos",
   lead:
-    "RURALI-ART es un proyecto de Rural Hackers: cultura, tecnología e innovación comunitaria desde Anceu, para que el rural sea un lugar donde crear y trabajar mejor — no solo un paisaje.",
+    "ARTESAN-IA lo impulsan Rural Hackers, desde Anceu (Galicia), y Espacio Geranios, en Caravaca (Murcia). Dos regiones de artesanía se prestan oficio, espacios creativos y pueblo.",
   image: {
-    src: "/images/ordenador-mano.jpg",
-    alt: "Ordenador sostenido hacia el cielo en Anceu — Rural Hackers",
-    width: 2000,
-    height: 1499,
+    src: "/images/revista.jpg",
+    alt: "Revista Rural Hackers, issue 01 Galicia",
+    width: 1548,
+    height: 1032,
   },
   links: [
     { href: "https://ruralhackers.com", label: "Rural Hackers" },
-    { href: "https://anceu.com", label: "Anceu Coliving" },
+    { href: "https://anceu.com", label: "Anceu" },
+    { href: "https://www.espaciogeranios.com", label: "Espacio Geranios" },
   ],
 } as const;
 
@@ -195,24 +202,19 @@ export const timeline = {
   title: "Calendario",
   phases: [
     {
-      when: "1 ago–1 sep 2026",
-      title: "Inscripción",
-      text: "Envía tu solicitud y elige cohorte.",
+      when: "TBC 2026",
+      title: "Convocatoria",
+      text: "Se abre la inscripción para las dos residencias. Fechas por confirmar.",
     },
     {
-      when: "19–25 oct 2026",
-      title: "Cohorte 1",
-      text: "Siete días de lab en Anceu.",
+      when: "6 noches · TBC",
+      title: "Residencia Anceu",
+      text: "15 plazas en Galicia, abiertas a toda España. Cierre con Fuchiqueira y Entre Culturas.",
     },
     {
-      when: "2–8 nov 2026",
-      title: "Cohorte 2",
-      text: "Siete días de lab en Anceu.",
-    },
-    {
-      when: "Marzo 2027",
-      title: "Becas",
-      text: "Un mes en Anceu para cinco artistas de las cohortes.",
+      when: "6 noches · TBC",
+      title: "Residencia Caravaca",
+      text: "5 plazas en Murcia, abiertas a toda España, con Espacio Geranios. Cierre abierto con el pueblo.",
     },
   ],
 } as const;
@@ -221,50 +223,53 @@ export const apply = {
   id: "convocatoria",
   title: "Convocatoria",
   lead:
-    "Si quieres usar la IA para recuperar tiempo de taller — no para que te sustituya — esta convocatoria es tuya.",
+    "Si te dedicas a la artesanía — o estás en ello — y vives en cualquier lugar de España, esta convocatoria es para ti: 20 plazas para una semana en Anceu o en Caravaca.",
   included: {
-    title: "Qué incluye",
+    title: "Qué te cubrimos",
     items: [
-      "Alojamiento en Anceu",
-      "Manutención",
-      "Facilitación del aprendizaje de IA por el equipo de Rural Hackers",
+      "Alojamiento en Anceu o en Caravaca",
+      "Comida todos los días de la residencia",
+      "Transporte cubierto (200 €)",
+      "Talleres, visitas, sesiones de IA y emprendimiento",
     ],
-    note: "No incluye el transporte hasta la aldea de Anceu.",
+    note: "Abierta a toda España. Fechas TBC 2026. Destinos: Anceu (Galicia) y Caravaca (Murcia), con Espacio Geranios.",
   },
   requirements: [
-    "Perfil artístico o creativo (visual, sonoro, textual, audiovisual, híbrido…).",
-    "Motivación clara: mejorar productividad y procesos con IA, no solo generar obra con ella.",
-    "Disponibilidad 7 días en Anceu: 19–25 octubre o 2–8 noviembre 2026.",
-    "Respeto por la ética, el consentimiento y el trabajo con la comunidad local.",
+    "Vivir en España: la convocatoria está abierta a cualquier comunidad autónoma.",
+    "Dedicarte a la artesanía o a una práctica de taller (cerámica, textil, madera, joyería, cuero, vidrio, híbridos…).",
+    "Ganas de compartir el oficio y de aprender IA, emprendimiento e internacionalización sin soltar las manos.",
+    "Disponibilidad de una semana (6 noches) en Anceu o en Caravaca.",
+    "Respeto por la gente de la aldea de Anceu y del pueblo de Caravaca: el proyecto de las tardes se hace con esa gente, no sobre ella.",
   ],
-  ctaLabel: "Inscribirme",
+  ctaLabel: "Escribir",
   cohorts: [
     {
-      id: "ed1",
-      label: "Cohorte 1",
-      edition: "ED1",
-      dates: "19–25 octubre 2026",
-      formUrl: "https://forms.gle/dynHbR5VD4VtmF8LA",
+      id: "anceu",
+      label: "Anceu, Galicia",
+      edition: "15 plazas",
+      dates: "Destino Galicia · 6 noches · TBC 2026",
+      formUrl:
+        "mailto:ana@ruralhackers.com?subject=ARTESAN-IA%20Anceu%20%E2%80%94%2015%20plazas",
     },
     {
-      id: "ed2",
-      label: "Cohorte 2",
-      edition: "ED2",
-      dates: "2–8 noviembre 2026",
-      formUrl: "https://forms.gle/dynHbR5VD4VtmF8LA",
+      id: "caravaca",
+      label: "Caravaca, Murcia",
+      edition: "5 plazas",
+      dates: "Destino Murcia · Espacio Geranios · TBC 2026",
+      formUrl:
+        "mailto:ana@ruralhackers.com?subject=ARTESAN-IA%20Caravaca%20%E2%80%94%205%20plazas",
     },
   ],
 } as const;
 
 export const partners = {
-  title: "Partners y apoyo",
+  title: "Quién lo hace",
   items: [
-    { name: "Ministerio de Cultura", role: "Ayuda a la acción y promoción cultural" },
-    { name: "Rural Hackers", role: "Entidad impulsora" },
-    {
-      name: "Eleven Yellow",
-      role: "Mecenazgo y mentoría técnica",
-      href: "https://www.elevenyellow.com",
-    },
+    { name: "Rural Hackers", role: "Anceu, Galicia", href: "https://ruralhackers.com" },
+    { name: "Espacio Geranios", role: "Caravaca, Murcia", href: "https://www.espaciogeranios.com" },
+    { name: "Anceu", role: "Acogida en Galicia", href: "https://anceu.com" },
   ],
 } as const;
+
+export const marqueeLine =
+  "ARTESAN-IA ● ABIERTA A TODA ESPAÑA ● 20 PLAZAS ● 15 ANCEU ● 5 CARAVACA ● TBC 2026 ● ";

@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://rurali-art.ruralhackers.com/sitemap.xml",
+    sitemap: "https://artesania.ruralhackers.com/sitemap.xml",
   };
 }

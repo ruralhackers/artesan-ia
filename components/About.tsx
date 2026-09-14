@@ -15,6 +15,11 @@ export function About() {
             <AnceuText text={about.body} />
           </p>
 
+          <aside className="mt-60 max-w-[34rem] border border-pure-ink px-24 py-24">
+            <h3 className="label-mono text-pure-ink">{about.workshops.title}</h3>
+            <p className="mt-16 text-body text-pure-ink">{about.workshops.text}</p>
+          </aside>
+
           <div className="mt-60 grid gap-40 md:grid-cols-3">
             {about.pillars.map((pillar) => (
               <article key={pillar.title} className="border-t border-bone-gray pt-20">

@@ -26,14 +26,14 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: {
-    default: `${site.name} — IA para tu proceso creativo`,
+    default: `${site.name} — Oficio, IA y territorio`,
     template: `%s · ${site.name}`,
   },
   description: site.description,
-  metadataBase: new URL("https://rurali-art.ruralhackers.com"),
+  metadataBase: new URL("https://artesania.ruralhackers.com"),
   icons: { icon: "/favicon.svg" },
   openGraph: {
-    title: `${site.name} — IA para tu proceso creativo`,
+    title: `${site.name} — Oficio, IA y territorio`,
     description: site.description,
     locale: "es_ES",
     type: "website",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} — IA y arte en Anceu`,
+    title: `${site.name} — Oficio, IA y territorio`,
     description: site.description,
     images: ["/og.svg"],
   },

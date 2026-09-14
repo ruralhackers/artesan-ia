@@ -23,7 +23,7 @@ export function Lab() {
           ))}
         </dl>
 
-        <div className="mt-60 grid gap-20 lg:grid-cols-3">
+        <div className="mt-60 grid gap-20 sm:grid-cols-2 lg:grid-cols-4">
           {lab.modules.map((module) => (
             <article key={module.title} className="flex flex-col gap-16">
               <div className="media-card relative aspect-[4/3] bg-cream-paper">
@@ -32,7 +32,7 @@ export function Lab() {
                   alt={module.image.alt}
                   fill
                   className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 33vw"
+                  sizes="(max-width: 1024px) 100vw, 25vw"
                 />
               </div>
               <div>

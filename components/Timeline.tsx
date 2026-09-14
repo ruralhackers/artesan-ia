@@ -8,7 +8,7 @@ export function Timeline() {
         <p className="label-mono text-pure-ink">07 / Calendario</p>
         <h2 className="mt-20 text-section text-pure-ink">{timeline.title}</h2>
 
-        <ol className="mt-60 grid gap-20 sm:grid-cols-2 lg:grid-cols-4">
+        <ol className="mt-60 grid gap-20 sm:grid-cols-2 lg:grid-cols-3">
           {timeline.phases.map((phase, index) => (
             <li key={phase.title} className="border-t border-bone-gray pt-20">
               <span className="label-mono text-charcoal-press">

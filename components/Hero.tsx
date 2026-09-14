@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { hero, site } from "@/content/site";
+import { hero } from "@/content/site";
 import { AnceuText } from "./AnceuText";
 import { Button } from "./Button";
 
@@ -15,31 +15,17 @@ export function Hero() {
           {hero.brand}
         </h1>
 
-        <p className="animate-rise-delay-1 mt-24 max-w-[22ch] text-display text-pure-ink md:max-w-[28ch]">
+        <p className="animate-rise-delay-1 mt-24 max-w-[22ch] text-display text-pure-ink md:max-w-[32ch]">
           {hero.headline}
         </p>
 
         <div className="animate-rise-delay-2 mt-40 flex flex-wrap gap-x-40 gap-y-12 border-y border-bone-gray py-16 label-mono text-pure-ink">
-          <span>IA para tu proceso</span>
-          <span>
-            ●{" "}
-            <a
-              href={site.anceuUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline underline-offset-4 transition-opacity hover:opacity-60"
-            >
-              Anceu
-            </a>
-            , Galicia
-          </span>
-          <span>● Oct–Nov 2026</span>
-          <span>● 2 cohortes × 12</span>
-          <span>● {site.org}</span>
+          {hero.facts.map((fact) => (
+            <span key={fact}>● {fact}</span>
+          ))}
         </div>
-
-        <div className="mt-40 flex flex-wrap items-end justify-between gap-40">
-          <p className="max-w-[32rem] text-body text-pure-ink">
+        <div className="mt-40 flex flex-col items-start gap-32">
+          <p className="max-w-[36rem] text-body text-pure-ink">
             <AnceuText text={hero.support} />
           </p>
           <div className="flex flex-wrap gap-10">
